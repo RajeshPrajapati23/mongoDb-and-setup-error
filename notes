@@ -1,0 +1,24 @@
+getting error :
+connect ECONNREFUSED 127.0.0.1:27017, connect ECONNREFUSED ::1:27017
+
+1. confirm that mongoDb server is installed and running.
+
+so check c drive path
+1. C:\Program Files\MongoDB\Server\8.0\bin 
+-> bin is present means installed 
+if not then install from browser url -> https://www.mongodb.com/try/download/community
+ after installed mongodb server
+
+to check mongodb server is runnig
+window + r and search -> services.msc and press ok
+-> look for -> MongoDB Server (MongoDB)
+-> left side you will stop and restart server if stoped then start server
+
+after confrim that server is running
+
+2. open command propmt with run as adminstartion 
+-> cd C:\Program Files\MongoDB\Server\8.0\bin
+-> run -> netstat -an | find "27017"
+ Proto  Local Address(my pc) Foreign Address(remote)       State
+-> TCP    127.0.0.1:27017        0.0.0.0:0             LISTENING 
+-> the above port your server is listing for port
