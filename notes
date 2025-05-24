@@ -21,4 +21,6 @@ after confrim that server is running
 -> run -> netstat -an | find "27017"
  Proto  Local Address(my pc) Foreign Address(remote)       State
 -> TCP    127.0.0.1:27017        0.0.0.0:0             LISTENING 
--> the above port your server is listing for port
+-> the above port your server is listing for port 127.0.0.1:27017 or 0.0.0.0:0:27017 for mongodb
+
+
